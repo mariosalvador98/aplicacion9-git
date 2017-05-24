@@ -5,7 +5,7 @@ $(document).ready(function(e){
 	
 });
 
-function  ondeviceReady(){
+function  onDeviceReady(){
 	
 	$('#posicion').on('click',function(){
 		getPosition ();
@@ -51,7 +51,7 @@ function  ondeviceReady(){
 			enableHighAccuracy :true,
 		}
 		
-		var watchID=navigator.geolocation.watchPosition(onSuccess,onError,options);
+		var watchID=navigator.geolocation.watchPosition(onSuccess, onError, options);
 		
 		function onSuccess(position){
 			
